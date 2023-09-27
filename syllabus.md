@@ -66,7 +66,7 @@ Some of what we cover
 
 #### Project Due: HTML and CSS (project1)
 
-Mon Oct 18, 11:59pm ET
+Wed Oct 11, 11:59pm ET
 
 ### Section 2: Browser Javascript
 
@@ -84,7 +84,7 @@ Mon Oct 18, 11:59pm ET
 
 #### Project Due: Javascript (project2)
 
-Mon Nov 8, 11:59pm ET
+Wed Nov 8, 11:59pm ET
 
 ### Section 3: React Intro
 
