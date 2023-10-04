@@ -1,0 +1,192 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    margin: 0;
+
+    font-family: "Times New Roman";
+}
+
+.root{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+        ;
+    height: 100%;
+
+    background-color: burlywood;
+}
+
+.header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(12, 2fr);
+    
+    background-color: lightgoldenrodyellow;
+}
+
+.header__title{
+    grid-column: span 8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2.1rem;
+}
+
+.header__logo__left,.header__logo_right{
+    grid-column: span 2;
+    aspect-ratio: 0.5/0.5;
+
+    width: 100%;
+}
+
+.main{
+    grid-area: main;
+    margin-top: 10px;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: repeat(12, 2fr);
+    gap:1rem;
+    padding: 20px;
+}
+
+.form__name,.form__email{
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12,2fr);
+    gap: 0.5rem;
+
+}
+
+.name,.email{
+    grid-column: span 2;
+    justify-self: start;
+    font-size: xx-large;
+}
+
+.name__input,.email__input{
+    grid-column: span 10;
+    font-size: x-large;
+}
+
+.form__checkbox{
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12,2fr);
+    gap: 0.5rem;
+}
+
+.form__checkbox__name{
+    grid-column: span 8;
+    justify-self: start;
+    font-size: xx-large;
+}
+
+.checkbox__input{
+    grid-column: span 4;
+    justify-self: start;
+    width: 30px; 
+    height: 30px;
+}
+
+.form__tier{
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.tier{
+    grid-column: span 5;
+    justify-self: flex-start;
+
+    font-size: xx-large;
+}
+
+
+.tier__input{
+    grid-column: span 7;
+    font-size: x-large;
+}
+
+button{
+    margin-top: 35px;
+    grid-column: span 12;
+    width: 180px;
+    height: 60px;
+    font-size: x-large;
+    justify-self: center;
+
+    border-radius: 20%;
+
+    background-color: beige;
+}
+
+.footer{
+    grid-area: span 12;
+}
+
+.footer__menu{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    gap: 0.5rem;
+
+    list-style: none;
+}
+
+.footer__item{
+    grid-column: span 4;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    
+    border: 1px dotted black;
+    background-color: thistle;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+@media screen and (max-width:60rem) {
+    
+    .root{
+        overflow-y: scroll;
+    }
+
+    .footer__item{
+        grid-column: span 12;
+    }
+
+    .name,.email{
+        justify-self: start;
+    }
+
+    .form__name__input,.form__email__input{
+        grid-column: span 12;
+        height: 39px;
+    }
+
+    .form__checkbox__check{
+        grid-column: span 1;
+        justify-self: flex-start;
+    }
+
+    .checkbox{
+        grid-column: span 11;
+    }
+
+    .tier{
+        grid-column: span 12;
+    }
+
+    .form__tier__check{
+        grid-column: span 12;
+    }
+}
