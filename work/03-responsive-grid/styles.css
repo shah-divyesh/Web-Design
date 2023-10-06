@@ -1,0 +1,161 @@
+*, *::before, *::after{
+    box-sizing: border-box;   
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.root{
+    background-color: beige;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    background-color: darksalmon;
+}
+
+.header_logo{
+    grid-column: span 2; 
+    
+    aspect-ratio: 1/1;
+    width: 100%;
+}
+
+.header_title{
+    grid-column: span 10;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size: 5rem;
+}
+
+.headernav_menu{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 0.5rem;
+
+    padding: 0;
+}
+
+.headernav_item{
+    grid-column: span 4;
+    display: flex;
+    justify-content: space-evenly;
+
+    border: 1px solid aquamarine;
+
+    background-color: lightpink;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 0.4rem;
+}
+
+.main_title{
+    display: flex;
+    grid-column: 1/13;
+    justify-content: space-evenly;
+}
+
+.card{
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid white;
+    border-radius: 1rem;
+
+    background-color: darkseagreen;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 5px 4px red;
+}
+
+.maincard_img{
+    aspect-ratio: 1/1;
+    width: 80%;
+
+    margin-top: 0.7rem;
+}
+
+.maincard_title{
+    text-align: center;
+}
+
+.maincard_text{
+    margin: 2rem;
+    flex-grow: 1;
+}
+
+.maincard_link{
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    border: 1px solid blue;
+    border-radius: 0.5rem;
+
+    background-color: blanchedalmond;
+    color: red;
+
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer_menu{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0.4rem;
+
+    padding: 0;
+    margin: 0;
+
+    background-color: black;
+
+    list-style: none;
+}
+
+.footer_item{
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-around;
+
+    border: 1px solid black;
+}
+
+.footer_link{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 50rem) {
+    .headernav_item{
+        grid-column: span 12;
+    }
+
+    .main{
+        background-color: khaki;
+    }
+
+    .card{
+        grid-column: span 12;
+    }
+
+    .card:hover{
+        box-shadow: 8px 8px 10px 5px LightSalmon;
+    }
+
+    .footer_item{
+        grid-column: span 12;
+    }
+}
