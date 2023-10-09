@@ -1,0 +1,25 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    
+}
+
+html,body{
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: darksalmon;
+}
+
+.root{
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: 
+        "header",
+        "nav",
+        "main",
+        "footer"
+    ;
+
+    height: 100%;
+
+}

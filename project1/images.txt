@@ -1,0 +1,4 @@
+Logo Image : 
+    url : https://unsplash.com/photos/hcxqLJjI99E
+    filename : /resources/image_1.jpg
+
