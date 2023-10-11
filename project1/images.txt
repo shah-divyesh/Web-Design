@@ -1,12 +1,12 @@
 Logo Image : 
     url : https://unsplash.com/photos/hcxqLJjI99E
-    filename : /resources/image_1.png
+    filename : /public/resources/image_1.png
 
-filename: /resources/image_2.png
+filename: /public/resources/image_2.png
 url : https://unsplash.com/photos/--SDX4KWIbA
 
-filename: /resources/image_3.png
+filename: /public/resources/image_3.png
 url : https://unsplash.com/photos/3FSBkX4yG80
 
-filename: /resources/image_3.png
+filename: /public/resources/image_3.png
 url : https://unsplash.com/photos/3a1NOxCBY10
