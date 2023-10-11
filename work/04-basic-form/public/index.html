@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+	<head lang="en">
+		<meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" href="styles.css">	
+	</head>
+	<body>
+		<div class="root">
+			<header class="header">
+				<img class="header__logo__left" src="http://placekitten.com/200/200?image=2">
+				<h1 class="header__title">Registration Page</h1>
+				<img class="header__logo_right" src="http://placekitten.com/200/150?image=1">
+			</header>
+			<main class="main">
+				<form class="form" method="POST" action="/submit">
+					<label class="form__name">
+						<span class="name">Name:</span>
+						<input class="name__input" type="text" name="userName" placeholder="Please enter your full name" required>
+					</label>
+					<label class="form__email">
+						<span class="email">Email:</span>
+						<input class="email__input" type="text" name="userEmail" placeholder="Please enter your email" required>
+					</label>
+					<label class="form__checkbox">
+						<span class="form__checkbox__name">Do you want us to send you annoying emails?</span>
+						<input class="checkbox__input" type="checkbox" name="annoy_me" value="True" checked>
+					</label>
+					<label class="form__tier">
+	                    <span class="tier">Which Tier do you want?</span>
+	                    <select class="tier__input" name="tier" required>
+	                        <option value="">Please select</option>
+	                        <option value="1">Silver Tier</option>
+	                        <option value="2">Gold Tier</option>
+	                        <option value="3">Platinum Tier</option>
+	                    </select>
+	                </label>
+                <button type="submit">Register</button>
+				</form>
+			</main>
+			<footer class="footer">
+				<ul class="footer__menu">
+					<li class="footer__item"><a class="footer__link" href="#">ABOUT US</a></li>
+					<li class="footer__item"><a class="footer__link "href="#">PRIVACY POLICY</a></li>
+					<li class="footer__item"><a class="footer__link "href="#">HELP</a></li>
+				</ul>
+			</footer>
+		</div>
+	</body>
+</html>
