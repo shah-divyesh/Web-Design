@@ -1,0 +1,125 @@
+.main{
+    grid-area: main;
+}
+
+.main__title{
+    display: grid;
+    justify-content: space-evenly;
+    padding: 0.25rem;
+    margin-top: 1.5rem;
+    align-items: center;
+    
+    font-style: italic;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: repeat(12, 2fr);
+    gap:1rem;
+    padding: 1.25rem;
+}
+
+.form__name,.form__email{
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12,2fr);
+    gap: 0.5rem;
+
+}
+
+.name,.email{
+    grid-column: span 4;
+    justify-self: start;
+    font-size: large;
+}
+
+.name__input,.email__input{
+    grid-column: span 8;
+    font-size: large;
+}
+
+.form__checkbox{
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12,2fr);
+    gap: 0.5rem;
+}
+
+.form__checkbox__name{
+    grid-column: span 4;
+    justify-self: start;
+    font-size: large;
+}
+
+.checkbox__input{
+    grid-column: span 8;
+    justify-self: start;
+    width: 1.25rem; 
+    height: 1.25rem;
+}
+
+.form__donation{
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.mode{
+    grid-column: span 4;
+    justify-self: flex-start;
+
+    font-size: large;
+}
+
+
+.donation__mode{
+    grid-column: span 7;
+    font-size: large;
+}
+
+.form__button{
+    margin-top: 2rem;
+    grid-column: span 12;
+    width: 7.5rem;
+    height: 2.5rem;
+    font-size: large;
+    font-weight: bolder;
+    justify-self: center;
+
+    border-radius: 20%;
+
+    background-color: beige;
+}
+
+@media screen and (max-width:60rem) {
+
+    .name,.email{
+        justify-self: start;
+    }
+
+    .form__name__input,.form__email__input{
+        grid-column: span 12;
+        height: 2.4rem;
+    }
+
+    .form__checkbox__check{
+        grid-column: span 11;
+        justify-self: flex-start;
+    }
+
+    .checkbox{
+        grid-column: span 1;
+    }
+
+    .donation{
+        grid-column: span 12;
+    }
+
+    .donation__mode{
+        grid-column: span 12;
+    }
+
+    button{
+        justify-self: center;
+    }
+}

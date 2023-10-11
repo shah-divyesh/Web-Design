@@ -1,0 +1,76 @@
+.main{
+    grid-area: main;
+    /* display: grid; */
+    grid-template-columns: repeat(12,2fr);
+    gap: 0.5rem;
+    
+}
+
+.main__title{
+    display: grid;
+    justify-content: space-evenly;
+    padding: 0.3rem;
+    margin: 0;
+    align-items: center;
+    
+    font-style: italic;
+}
+
+.card{
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 1.5rem;
+    width: 60%; /* Cards will occupy 100% of the container's width */
+    background-color: palegoldenrod;
+    margin-left: 20%; /* Optional: Add margin around the cards */
+    margin-right: 20%;
+    margin-top: 0.625rem;
+}
+
+.card__img{
+    aspect-ratio: 1/1;
+    height: 15.625rem;
+    width: 15.625rem;
+    margin-top: 0.7rem;
+    
+    border-radius: 2.5rem;
+}
+
+.card__title{
+    text-align: center;
+
+    border: 2px solid steelblue;
+    border-radius: 0.25rem;
+    background-color: steelblue;
+}
+
+.card__text{
+    margin: 2rem;
+    flex-grow: 1;
+}
+
+.card__link{
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+
+    background-color: darkgray;
+    color: maroon;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-weight: bolder;
+}
+
+@media screen and (max-width:50rem) {
+    .card{
+        grid-column: span 12;
+    }
+}
