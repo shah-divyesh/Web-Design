@@ -29,7 +29,7 @@ This webpage can be viewed and used by running:
   - The email field must have an "@" in it
     - Do NOT test for any other email-like trait/text
         - ONLY test for an "@" symbol
-    - Not using type="email"
+    - NOT using type="email"
   - The confirm field must match the email field
   - These fields are tested when their value changes AND when the form attempts to submit
 - When validation is passed, the form will submit to "/subscribe"
