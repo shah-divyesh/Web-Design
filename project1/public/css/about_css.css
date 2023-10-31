@@ -1,0 +1,22 @@
+.main__title{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: bolder; 
+    line-height: 1.4rem;
+
+    color: brown;
+}
+
+.main__paragraph{
+    font-family: 'Times New Roman', Times, serif Serif;
+    font-size: 1rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 1.4rem;
+    margin: 1.5rem;
+    padding: 0.2rem;    
+}

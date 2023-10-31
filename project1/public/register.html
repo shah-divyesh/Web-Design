@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/commonstyle.css">
+        <link rel="stylesheet" href="css/regsiter_css.css">
+        <link href='https://css.gg/css' rel='stylesheet'>
+        <title>Register Page</title>    
+    </head>
+
+    <body>
+        <div class="root">
+            <header class="header">
+                <a href="./index.html"><img class="header__logo" src="resources/image_1.png" alt="Logo Image"></a>
+                <h1 class="header__title">Rabbit's Story</h1>
+                <a href="./index.html"><img class="header__logo" src="resources/image_1.png" alt="Logo Image"></a>
+            </header>
+
+            <nav class="nav">
+                <ul class="nav__menu">
+                    <li class="nav__dropdown">
+                        <!-- below CSS adapted from https://css.gg under the MIT License -->
+                        <button class="nav__button"><a class="nav__link" href="./index.html"><gg-icon class="gg-home-alt "></gg-icon>Home</a></button>
+                        <ul class="nav__submenu">
+                            <li class="nav__subitem"><a class="nav__item" href="/newPage.html">NEW</a></li>
+                            <li class="nav__subitem"><a class="nav__item" href="/open.html">OPEN</a></li>
+                            <li class="nav__subitem"><a class="nav__item" href="/save.html">SAVE</a></li>
+                        </ul>
+                     </li>
+                     <li class="nav__dropdown">
+                        <button class="nav__button"><a class="nav__link" href="./about.html">About Rabbits</a></button>
+                        <ul class="nav__submenu">
+                            <li class="nav__subitem"><a class="nav__item" href="/newPage.html">NEW</a></li>
+                            <li class="nav__subitem"><a class="nav__item" href="/open.html">OPEN</a></li>
+                            <li class="nav__subitem"><a class="nav__item" href="/save.html">SAVE</a></li>
+                        </ul>
+                     </li>
+                     <li class="nav__dropdown">
+                        <button class="nav__button"><a class="nav__link" href="./register.html">Register</a></button>
+                        <ul class="nav__submenu">
+                            <li class="nav__subitem"><a class="nav__item" href="/newPage.html">NEW</a></li>
+                            <li class="nav__subitem"><a class="nav__item" href="/open.html">OPEN</a></li>
+                            <li class="nav__subitem"><a class="nav__item" href="/save.html">SAVE</a></li>
+                        </ul>
+                     </li>
+                </ul>
+            </nav>
+
+            <main>
+                <h2 class="main__title"> Donation form for Rabbit Awareness</h2>
+
+                <form class="form" action="index.html" method="post">
+
+                    <label class="form__name">
+                        <span class="name">Name:</span>
+                        <input class="name__input" type="text" name="userName" placeholder="Please enter your full name" required>
+                    </label>
+
+                    <label class="form__email">
+                        <span class="email">Email:</span>
+                        <input class="email__input" type="text" name="userEmail" placeholder="Please enter your email" required>
+                    </label>
+
+                    <label class="form__checkbox">
+                        <span class="form__checkbox__name">Would you like to regsiter for Rabbit Awareness?</span>
+                        <input class="checkbox__input" type="checkbox" name="choice" value="True" checked>
+                    </label>
+
+                    <label class="form__donation">
+                        <span class="mode">How would you like to donate?*</span>
+                        <select class="donation__mode" name="donation" required>
+                            <option value="">Please select</option>
+                            <option value="1">During your visit to center</option>
+                            <option value="2">Online</option>
+                            <option value="3">Will be sending a Check...</option>
+                        </select>
+                    </label>
+
+                    <button class="form__button" type="submit">Submit</button>
+                </form>
+            </main>
+
+            <footer class="footer">
+                <nav class="footer__nav">
+                    <ul class="footer__menu">
+                        <li class="footer__item"><a class="footer__link" href="/privacy.html">Privacy Policy</a></li>
+                        <li class="footer__item"><a class="footer__link" href="/join.html">Join Us</a></li>
+                        <li class="footer__item"><a class="footer__link" href="/contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </footer>
+
+        </div>
+    </body>
+</html>
