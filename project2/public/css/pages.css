@@ -1,0 +1,10 @@
+.main{
+    grid-area: main;
+}
+
+p{
+    padding: 1rem;
+    justify-self: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}

@@ -42,9 +42,10 @@
 
 .card__img{
     aspect-ratio: 1/1;
-    width: 80%;
+    width: 200px;
+    height: 200px;
 
-    margin-top: 0.7rem;
+    margin-top: 0.5rem;
 }
 
 .card__title{
@@ -61,9 +62,9 @@
     background-color: inherit;
     text-align: center;
     text-decoration: underline;
-    font-size: large;
+    font-size: 1rem;
     color: blue;
-    padding-left: 1px;
+    padding-left: 0.5rem;
     padding-right: 0;
 }
 
