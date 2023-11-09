@@ -1,0 +1,18 @@
+.fade-in-button{
+    animation: fadeIn 2s;
+    color: red;
+
+    width: 8rem;
+    border-radius: 15%;
+    font-size: 1.5rem;
+}
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
