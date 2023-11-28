@@ -1,0 +1,42 @@
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 0;
+    margin: 0;
+
+    font-size: large;
+    list-style: none;
+
+    min-width: -webkit-fill-available;
+    background-color: burlywood;
+}
+
+.nav__item {
+    text-align: center;
+}
+
+.nav__link {
+    padding: 0 1rem;
+    margin: 0.5rem;
+    display: inline-block;
+}
+
+.nav__item:hover {
+    background-color: dodgerblue;
+}
+
+@media screen and (max-width: 44rem) {
+    .nav__list {
+        position: absolute;
+        flex-direction: column;
+        transform: rotateX(0deg);
+
+        top: 6.3rem;
+    }
+
+    .close {
+        transform: rotateX(-90deg);
+    }
+}

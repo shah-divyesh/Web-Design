@@ -1,0 +1,19 @@
+.cardPage {
+    grid-area: main;
+    
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 0.5rem;
+
+    margin-top: 1rem;
+}
+
+.card__button {
+    border-radius: 30%;
+    
+    font: 0.8rem sans-serif;
+    background-color: burlywood;
+    color: red;
+
+    cursor: pointer;
+}
