@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/commonstyles.css">
+    <title>Home Page</title>    
+</head>
+<body>
+    <div class="root">
+        <header class="header">
+            <a href="index.html"><img class="header__logo" src="resources/image_1.png" alt="Logo Image"></a>
+            <h1 class="header__title">Rabbit's Story</h1>
+            <a href="index.html"><img class="header__logo" src="resources/image_1.png" alt="Logo Image"></a>
+        </header>
+
+        <nav class="nav">
+            <ul class="nav__menu">
+                <li class="nav__dropdown">
+                    <button class="nav__button">Home</button>
+                    <ul class="nav__submenu nav__submenu__onclick">
+                        <li class="nav__subitem"><a class="nav__item" href="newPage.html">NEW</a></li>
+                        <li class="nav__subitem"><a class="nav__item" href="open.html">OPEN</a></li>
+                        <li class="nav__subitem"><a class="nav__item" href="save.html">SAVE</a></li>
+                    </ul>
+                 </li>
+                 <li class="nav__dropdown">
+                    <button class="nav__button">About Rabbits</button>
+                    <ul class="nav__submenu nav__submenu__onclick">
+                        <li class="nav__subitem"><a class="nav__item" href="newPage.html">NEW</a></li>
+                        <li class="nav__subitem"><a class="nav__item" href="open.html">OPEN</a></li>
+                        <li class="nav__subitem"><a class="nav__item" href="save.html">SAVE</a></li>
+                    </ul>
+                 </li>
+                 <li class="nav__dropdown">
+                    <button class="nav__button">Register</button>
+                    <ul class="nav__submenu nav__submenu__onclick">
+                        <li class="nav__subitem"><a class="nav__item" href="newPage.html">NEW</a></li>
+                        <li class="nav__subitem"><a class="nav__item" href="open.html">OPEN</a></li>
+                        <li class="nav__subitem"><a class="nav__item" href="save.html">SAVE</a></li>
+                    </ul>
+                 </li>
+            </ul>
+        </nav>
+
+
+        <main class="main">
+            <form class="form" method="POST" action="/register">
+                <label class="form__name">
+                    <span class="name">Name (required) :</span>
+                    <input class="name__input" type="text" name="userName" placeholder="Please enter your full name">
+                    <div class="name__valid"></div>
+                </label>
+                <label class="form__email">
+                    <span class="email">Email (required) :</span>
+                    <input class="email__input" type="text" name="userEmail" placeholder="Please enter your email">
+                    <div class="email__valid"></div>
+                </label>
+
+                <label class="form__confirm__email">
+                    <span class="confirm__email">Confirm Email:</span>
+                    <input class="confirm__email__input" type="text" name="userConfirmEmail" placeholder="Please enter your email again">
+                    <div class="confirm__email__valid"></div>
+                </label>
+
+                <label class="form__checkbox">
+                    <input class="checkbox__check" type="checkbox" name="wants-spam" value="True" checked>
+                    <span class="checkbox">Yes, I want to receive spam emails</span>
+                </label>
+                <label class="form__tier">
+                    <span class="tier">Which Tier do you want?</span>
+                    <select class="tier__input" name="tier">
+                        <option value="">Please select</option>
+                        <option value="1">Silver Tier</option>
+                        <option value="2">Gold Tier</option>
+                        <option value="3">Platinum Tier</option>
+                    </select>
+                </label>
+            <button class="form__button" type="submit">Register</button>
+            </form>
+        </main>
+
+        <footer class="footer">
+            <nav class="footer__nav">
+                <ul class="footer__menu">
+                    <li class="footer__item"><a class="footer__link" href="/privacy.html">Privacy Policy</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/join.html">Join Us</a></li>
+                    <li class="footer__item"><a class="footer__link" href="/contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+<script src="./form.js"></script>
+</html>
