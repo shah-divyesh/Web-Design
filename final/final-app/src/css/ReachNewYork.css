@@ -1,0 +1,70 @@
+/* import new font from google */
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+
+
+.reach__title{
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.reach__card{
+    display: flex;
+    border: 1px black solid;
+    background-color: #eee;
+    margin: 1rem;
+    background: inherit;
+    color: inherit;
+    background-color: antiquewhite;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 0.2rem;
+}
+
+.reach__card + .reach__card{
+    flex-direction: row;
+    
+}
+
+.reach__card__img {
+    aspect-ratio: 1/1; 
+    height: 200px;
+    width: 200px;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.reach__card__title{
+    font-family: Lora;
+    text-align: center;
+    color: darkgoldenrod;
+}
+
+.reach__card__para{
+    font-family: Cinzel;
+    font-weight: 800;
+    margin: 0;
+    color: darkgoldenrod;
+}
+
+.reach___card:hover {
+    box-shadow:  0.1px 10px rgb(200,178,111);
+}
+
+
+@media screen and (max-width: 50rem) {
+    .reach___card{
+        display: block;
+        margin: 1rem;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .reach___card__img{
+        float: left;
+        margin-left: 0;
+    }
+}

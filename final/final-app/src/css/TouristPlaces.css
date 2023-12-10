@@ -1,0 +1,69 @@
+/* import new font from google */
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+.attractions__title{
+    font-weight: 900;
+}
+
+.place__card{
+    display: flex;
+    border: 1px black solid;
+    background-color: #eee;
+    margin: 1rem;
+    background: inherit;
+    color: inherit;
+    background-color: antiquewhite;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.place__card + .place__card{
+    flex-direction: row;
+    
+}
+
+.place__img {
+    aspect-ratio: 1/1;
+    height: 200px;
+    width: 200px;
+    height: fit-content;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.place__title{
+    font-family: Lora;
+    text-align: center;
+    color: darkgoldenrod;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.place__para{
+    font-family: Cinzel;
+    margin: 0;
+    color: darkgoldenrod;
+    margin-bottom: .3rem;
+    margin-left: 0.3rem;
+}
+
+.place__card:hover {
+    box-shadow:  1px 4px rgb(200,178,111);
+}
+
+@media screen and (max-width: 50rem) {
+    .place__card{
+        display: block;
+        margin: 1rem;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .place__img{
+        float: right;
+        margin-right: 0;
+    }
+}

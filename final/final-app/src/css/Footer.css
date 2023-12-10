@@ -1,0 +1,45 @@
+.footer {
+    grid-area: footer;
+    border-top: 1px solid;
+    color: inherit;
+    background-color: blanchedalmond;
+}
+
+.footer__navopen {
+    display: none;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+.footer__menu div {
+    padding: 0 2px;
+}
+
+.footer__item {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer__item:hover {
+    border-bottom: 2px red solid;
+}
+
+.footer__link {
+    padding: 0 30px;
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 44rem) {
+    .footer__menu {
+        flex-direction: column;
+    }
+}

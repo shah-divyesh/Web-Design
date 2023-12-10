@@ -1,0 +1,74 @@
+/* import new font from google */
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+.food__places__title{
+    font-weight: 900;
+}
+
+.food__places__para{
+    font-style: italic;
+    text-align: center;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.restaurant__card{
+    display: flex;
+    border: 1px black solid;
+    background-color: #eee;
+    margin: 1rem;
+    background: inherit;
+    color: inherit;
+    background-color: antiquewhite;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 0.2rem;
+}
+
+.restaurant__card + .restaurant__card{
+    flex-direction: row;
+    
+}
+
+.restaurant__img {
+    aspect-ratio: 1/1;
+    height: 200px;
+    width: 200px;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+
+}
+
+.restaurant__title{
+    font-family: Lora;
+    text-align: center;
+    color: darkgoldenrod;
+}
+
+.restaurant__para{
+    font-family: Cinzel;
+    margin: 0;
+    color: darkgoldenrod;
+}
+
+.restaurant__card:hover {
+    box-shadow:  1px 4px rgb(200,178,111);
+}
+
+
+
+@media screen and (max-width: 50rem) {
+    .restaurant__card{
+        display: block;
+        margin: 1rem;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .restaurant__img{
+        float: right;
+        margin-right: 0;
+    }
+}

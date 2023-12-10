@@ -1,0 +1,21 @@
+.app {
+  display: grid;
+  grid-template-areas: 
+      "header"
+      "main"
+      "footer"
+  ;
+  grid-template-rows: auto 1fr auto;
+  position: relative;
+  height: 100%;
+}
+
+.light {
+  background: #fff;
+  color: #333;
+}
+
+.dark {
+  background: #333;
+  color: rgb(228, 221, 221);
+}
