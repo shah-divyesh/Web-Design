@@ -1,0 +1,74 @@
+p{
+    margin-top: 0;
+}
+
+.main__title{
+    
+    font-family:'Times New Roman', Times, serif;
+    font-size: 5rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    text-align:  center;
+}
+
+.main__paragraph{
+    font-family: Noto Serif;
+    font-size: 1.5rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 2rem;
+    margin-left: 2.2rem;
+
+    /* background-color: blanchedalmond; */
+}
+.button__div{
+    width:fit-content;
+}
+
+.button__link{
+    border: none;
+    color: blue; 
+    text-decoration: underline; 
+    cursor: pointer; 
+    padding: 0; 
+    margin:2rem;
+    font-size: 1rem;
+}
+
+.button__link:hover,
+.button__link:focus {
+    text-decoration: none; /* Removes underline on hover/focus for interaction feedback */
+}
+
+.modal__dialog{
+    position: fixed; 
+    top: 50%; 
+    left: 10%;
+    padding: 1rem;
+    transform: translate(-50%, -50%); 
+    z-index: 1000; 
+}
+
+.modal_button{
+    margin-left: 25%;
+}
+.custom__dialog{
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: black; 
+    padding:  1.25rem; 
+    border-radius: 0.5rem; 
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
+    width: auto; 
+    max-width: 90%; 
+    color: red;
+}
+
+.custom__dialog__button{
+    margin-left: 30%;
+}

@@ -1,0 +1,49 @@
+.nav__button {
+    display: none;
+    text-align: center;
+    border: none;
+    background-color: inherit;
+    font-size: larger;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.nav__button:hover {
+    cursor: pointer;
+}
+
+/* below CSS adapted from https://css.gg under the MIT License */
+.gg-menu {
+    transform: scale(var(--ggs,1));
+    
+    margin: 2rem;
+}
+.gg-menu,
+.gg-menu::after,
+.gg-menu::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    border-radius: 0.1875rem;
+    background: currentColor
+}
+.gg-menu::after,
+.gg-menu::before {
+    content: "";
+    position: absolute;
+    top: -0.375rem;
+}
+.gg-menu::after {
+    top: 0.375rem;
+}
+
+@media screen and (max-width: 44rem) {
+    .nav__button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}

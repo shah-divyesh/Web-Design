@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+.rare__cards{
+    display: flex;
+    border: 1px black solid;
+    background-color: #eee;
+}
+
+.rare__card + .rare__card{
+    flex-direction: row;
+    margin: 0.5rem;
+}
+
+.rare__card:first-child{
+    flex-direction: row-reverse;
+    margin: 1rem 1rem 1rem;
+}
+
+.rare__card__sokeke{
+    aspect-ratio: 1/1;
+    height: fit-content;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+}
+
+.rare__card__minskin{
+    aspect-ratio: 1/1;
+    height: fit-content;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+}
+
+.rare__card__title{
+    font-family: Lora;
+    text-align: center;
+}
+
+.rare__card__para{
+    font-family: Cinzel;
+    margin: 0;
+}
+
+@media screen and (max-width: 44rem) {
+    .rare__card{
+        grid-column: span 12;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .rare__card + .rare__card{
+        flex-direction: row;
+        margin: 0rem;
+    }
+    
+    .rare__card:first-child{
+        flex-direction: row-reverse;
+        margin: 0;
+        border-bottom: none;
+    }
+
+    .rare__card__sokeke{
+        float: right;
+    }
+    
+    .rare__card__minskin{
+        float: left;
+    }
+}
