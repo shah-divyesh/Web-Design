@@ -37,6 +37,7 @@ function App() {
 
   return (
     <div className={`app ${darkMode ? 'dark' : 'light'}`}>
+        <a className='skiplink' href='MainSection' aria-label='click and go into main'>Skip to Content</a>
         <Header darkMode={darkMode} showDarkMode={setDarkMode} signModalCallback={signModalCallback} user={user} menuOn={menuOn} setMenuOn={setMenuOn} onBrowse={onBrowse}/>
         <MainSection darkMode={darkMode}
             menuOn={menuOn} 
