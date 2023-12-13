@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/cats.css">
+    <link rel="stylesheet" href="./css/dialog.css">
+    <title>Cat's Page</title>
+</head>
+<body>
+    <a class="skiplink" href="./index.html" aria-label="click here to go to index Page">Skip to Content</a>
+
+    <div class="root">
+        <div class="header-nav">
+            <header class="header">
+                <a href="./index.html" aria-label="click here to go to index page"><img class="header__logo" src="./resoucres/logo__cat.png" alt="click here to go to index page" aria-label="chech here to back to Index Page"></a>
+                <h1 class="header__title">Famous Internet Cats</h1>
+            </header>
+            <nav class="nav">
+                <ul class="nav__menu">  
+                    <button type="button" class="nav__button"><br><i class="gg-menu"></i>Menu</button>
+                    <ul class="close nav__dropdown ">
+                        <li class="nav__item"><a class="nav__link" href="./index.html" aria-label="Click here to go to Index page">Home</a></li>
+                        <li class="nav__item"><a class="nav__link" href="./cats.html" aria-label="Click here to know about Famous Cats">Famous Cats</a></li>
+                        <li class="nav__item"><a class="nav__link" href="./events.html" aria-label="Click here to know about Upcoming events">Cat Events</a></li>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
+        <main class="main">
+            <div class="cards">
+                <div class="card">
+                    <h2 class="card__title">Jorts</h2>
+                    <img class="card__img" src="./resoucres/angry__cat.png" alt="I'm an Angry Cat">
+                    <div class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis saepe blanditiis quam commodi voluptatum soluta, magni, quis odio rem dolore fuga ratione, voluptates excepturi! <button type="button" class="card__cta" aria-label="Click here and regsiter to be a member">Subscribe</button> Nihil quaerat nobis velit molestias doloribus?</div>                    
+                </div>
+                <div class="card">
+                    <h2 class="card__title">Jean</h2>
+                    <img class="card__img" src="./resoucres/hungry__cat.png" alt="I'm a Hungry Cat">
+                    <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ea, commodi amet sunt ad, laborum facilis debitis nam deleniti magnam minus? <button type="button" class="card__cta" aria-label="Click here and regsiter to be a member">Subscribe</button> Porro vitae labore quasi incidunt, saepe eos non vel.</div>    
+                </div>
+                <div class="card">
+                    <h2 class="card__title">Maru</h2>
+                    <img class="card__img" src="./resoucres/baby__cat.png" alt="We are Baby Cats">
+                    <div class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, voluptatibus exercitationem perferendis porro error iste, dolorem a soluta tenetur excepturi delectus quod maiores. Dignissimos, voluptate! <button type="button" class="card__cta" aria-label="Click here and regsiter to be a member">Subscribe</button> Sed autem nesciunt qui nostrum.</div>    
+                </div>
+                <div class="card">
+                    <h2 class="card__title">Nyancat</h2>
+                    <img class="card__img" src="./resoucres/lazy__cat.png" alt="I'm a Lazy Cat">
+                    <div class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo veniam earum repellat ipsam praesentium harum eveniet mollitia obcaecati repellendus eum! <button type="button" class="card__cta" aria-label="Click here and regsiter to be a member">Subscribe</button> Laudantium unde hic ea error placeat, officiis pariatur corporis ad?</div>   
+                </div>
+                <div class="card">
+                    <h2 class="card__title">Grumpy Cat</h2>
+                    <img class="card__img" src="./resoucres/silent__cat.png" alt="I'm a Silent Cat">
+                    <div class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo veniam earum repellat ipsam praesentium harum eveniet mollitia obcaecati repellendus eum! <button type="button" class="card__cta" aria-label="Click here and regsiter to be a member">Subscribe</button> Laudantium unde hic ea error placeat, officiis pariatur corporis ad?</div>
+                </div>
+                <div class="card">
+                    <h2 class="card__title">Lil Bub</h2>
+                    <img class="card__img" src="./resoucres/sleepy__cat.png" alt="I'm a Sleepy Cat">
+                    <div class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo veniam earum repellat ipsam praesentium harum eveniet mollitia obcaecati repellendus eum! <button type="button" class="card__cta" aria-label="Click here and regsiter to be a member">Subscribe</button> Laudantium unde hic ea error placeat, officiis pariatur corporis ad?</div>
+                </div>
+
+                <dialog class="register__form">
+                    <form class="form" action="/subscribe" method="post">
+                        <h2 class="form__title">!! Subscribe to Latest Mews !!</h2>
+        
+                        <label class="form__email">
+                            <span class="email">Email: *required</span>
+                            <input class="form__email__input" type="text" name="userEmail" placeholder="Please enter your email">
+                            <div class="form__email__valid"></div>
+                        </label>
+        
+                        <label class="form__confirm__email">
+                            <span class="confirm__email">Confirm Email: *required</span>
+                            <input class="form__confirm__email__input" type="text" name="userConfirmEmail" placeholder="Confirm your email">
+                            <div class="form__confirm__email__valid"></div>
+                        </label>
+                        
+                        <div class="form__button">
+                            <button class="form__button__submit" type="submit">Subscribe</button>
+                            <button class="form__button__cancel" type="button">Cancel</button>
+                        </div>
+                    </form>
+                </dialog>
+            </div>
+        </main>
+        <footer class="footer">
+            <nav class="footer__nav">
+                <ul class="footer__menu">
+                    <li class="footer__item"><a class="footer__link" href="./footer/privacy.html">Privacy Policy</a></li>
+                    <li class="footer__item"><a class="footer__link" href="./footer/careers.html">Work for Us</a></li>
+                    <li class="footer__item"><a class="footer__link" href="./footer/contact.html">Contact Us</a></li>
+                    <li class="footer__item"><a class="footer__link" href="./footer/socials.html">Social Media</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+<script src="./js/global.js"></script>
+<script src="./js/cats.js"></script>
+</html>
